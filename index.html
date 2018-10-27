@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="content" id="content">
+        <div class="resetContent">
+            <button type="submit" id="resetBtn" class="resetBtn">Ազատել նստատեղերը</button>
+        </div>
+        <div class="chairBG webkit" id="chairBG">
+            <div class="firstColumn" id="firstColumn"></div>
+            <div class="secondColumn" id="secondColumn"></div>
+        </div>
+        <div id="popupContent" class="popupContent">
+            <form id='form' class="form">
+                <h2>Լրացրո՛ւ տվյալները</h2><br>
+
+                <input id="seatID" value='' type="hidden" name='seatID'>
+                <label for="firstName"><b>Անուն</b></label>
+                <input type="text" value="" class="popupInput" placeholder="Անուն" name="firstName" required>
+                <br>
+
+                <label for="lastName"><b>Ազգանուն</b></label>
+                <input type="text" value="" class="popupInput" placeholder="Ազգանուն" name="lastName" required>
+                <br>
+
+                <label for="phoneNumber"><b>Հեռ․ համար</b></label>
+                <input type="text" value="" class="popupInput" placeholder="Հեռ․ համար" name="phoneNumber" required>
+                <br>
+
+                <div class="buttons">
+                    <button id="saveBtn" type="submit" class="SaveBtn webkit">Պատվիրել</button>
+                    <button id="cancelBtn" class="cancelBtn webkit" onclick="closePopup()">Չեղարկել</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
